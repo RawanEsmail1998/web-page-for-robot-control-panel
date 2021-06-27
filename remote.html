@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="remote_control.css">
+    <title>لوحة التحكم بالروبوت</title>
+</head>
+<body>
+    <h1>لوحة التحكم بالروبوت</h1>
+ <form method="post" action="insert.php" target="_blank">
+    <div class="slidecontainer">
+        <input type="range" min="0" max="180" value="1" class="slider" id="range1" name="en1"> 
+        <p class="engin">1 محرك </p>
+        <p>value: <span id="output1"></span></p>
+    </div>
+    <hr>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="180" value="1" class="slider" id="range2" name="en2"> 
+        <p class="engin">2 محرك </p>
+        <p>value: <span id="output2"></span></p>
+    </div>
+    <hr>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="180" value="1" class="slider" id="range3" name="en3"> 
+        <p class="engin">3 محرك </p>
+        <p>value: <span id="output3"></span></p>
+    </div>
+    <hr>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="180" value="1" class="slider" id="range4" name="en4"> 
+        <p class="engin">4 محرك </p>
+        <p>value: <span id="output4"></span></p>
+    </div>
+    <hr>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="180" value="1" class="slider" id="range5" name="en5"> 
+        <p class="engin">5 محرك </p>
+        <p>value: <span id="output5"></span></p>
+    </div>
+    <hr>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="180" value="1" class="slider" id="range6" name="en6"> 
+        <p class="engin">6 محرك </p>
+        <p></p>value: <span id="output6"></span></p>
+    </div>
+    <div class="slidecontainer">
+     <input type="submit" id='bOne' name="save" value="حفظ">
+     <input type="submit" id='bTwo' name="on" value="تشغيل">
+    </div>
+</form>
+    <script src="remote_control.js"></script>
+</body>
+</html>

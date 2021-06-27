@@ -1,0 +1,82 @@
+body{
+  background:#afb3ba;
+  color: white;
+}
+h1{
+ text-align: center;
+}
+.slidecontainer {
+ margin: auto;
+ max-width: 500px;
+ position: relative;
+    /* Width of the outside container */
+  }
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 85%; /* Full-width */
+    height: 25px; /* Specified height */
+    height: 15px;
+    border-radius: 12px;  /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    box-shadow: 0px 1px 10px 1px black;
+    margin: 10px;
+  }
+  .engin{
+      float: right;
+      margin: 0;
+  }
+  p{
+    margin: 0;
+  }
+ .slider:hover{
+    opacity: 1px;
+  } 
+  .slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  }
+  .slider::after{
+    content: '180';
+    color: green;
+    font-size: 1rem;
+    right: 10px;
+    top: 40%;
+    position: absolute;
+    font-size: 15px;  }
+  .slider::before{
+    content: '0';
+    color: green;
+    font-size: 15px;
+    top: 40%;
+    left: -3px;
+    position: absolute;
+  }
+html body input#bOne{
+  background-color: green;
+  margin-right: 200px;
+  height: 35px;
+  width: 60px;
+  border-radius: 30%;
+  color:white;
+  border: 1px solid white;
+  font: 20px sans-serif;
+}
+html body input#bTwo{
+  background-color: green;
+  margin-left: 128px;
+  height: 35px;
+  width: 60px;
+  border-radius: 30%;
+  border: 1px solid white;
+  font: 20px sans-serif;
+  color:white;
+}
